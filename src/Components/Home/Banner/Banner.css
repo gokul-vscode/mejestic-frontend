@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+    padding-top: 100px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* ====== Desktop ====== */
+.slide {
+  /* margin-top: 20px; */
+  width: 100%;
+  height: 100vh;   /* ↓ Reduced height */
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.slideimg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  position: relative;
+}
+
+.slideoffer {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  position: absolute;
+  left: 7%;
+}
+
+.offermsg {
+  color: red;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.dji {
+  font-size: 70px;   /* ↓ Slightly reduced for balance */
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.shopnow {
+  width: 30%;
+  height: 45px;
+  color: white;
+  background-color: black;
+  border-radius: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.shopnow:hover {
+  color: black;
+  background-color: white;
+  background:
+    linear-gradient(217deg, rgb(255 0 0 / 0.8), transparent 70.71%),
+    linear-gradient(127deg, rgb(0 255 0 / 0.8), transparent 70.71%),
+    linear-gradient(336deg, rgb(0 0 255 / 0.8), transparent 70.71%);
+  transition: 0.6s;
+}
+
+/* ====== Tablet (768px - 834px) ====== */
+@media (min-width: 768px) and (max-width: 834px) {
+  .slide {
+    height: 35vh;     /* ↓ reduced tablet height */
+  }
+
+  .dji {
+    font-size: 40px;
+  }
+
+  .shopnow {
+    font-size: 14px;
+    width: 40%;
+  }
+}
+
+/* ====== Mobile (max-width: 450px) ====== */
+@media screen and (max-width: 450px) {
+  .slide {
+    width: 100%;
+    height: 40vh;   /* ↓ was 50vh — reduced */
+  }
+
+  .slideoffer {
+    width: 90%;
+    left: 5%;
+    top: 8%;
+  }
+
+  .offermsg {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .dji {
+    font-size: 26px;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .shopnow {
+    width: 55%;
+    font-size: 13px;
+    height: 32px;
+    margin-top: 12px;
+    border-radius: 17px;
+  }
+}

@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* Prevent horizontal scroll */
+body, html {
+  overflow-x: hidden;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #5e49a7, #5441ff);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #9a41ff, #2f2bff);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tab-card, .cp-big-img, .sub-img {
+  max-width: 100%;
+  box-sizing: border-box;
+}

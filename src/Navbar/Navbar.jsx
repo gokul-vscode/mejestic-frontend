@@ -59,21 +59,69 @@ const Navbar = () => {
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
-            <a href="#banner" onClick={(e) => {e.preventDefault(); document.getElementById("banner")?.scrollIntoView({ behavior: "smooth" });}}>Home</a>
+            <a
+              href="#banner"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("banner")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#products" onClick={(e) => {e.preventDefault(); document.getElementById("products")?.scrollIntoView({ behavior: "smooth" });}}>Products</a>
+            <a
+              href="#products"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("products")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Products
+            </a>
           </li>
           <li>
-            <a href="#footer" onClick={(e) => {e.preventDefault(); document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });}}>Services</a>
+            <a
+              href="#footer"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("footer")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Services
+            </a>
           </li>
           <li>
-            <a href="#footer" id="about" onClick={(e) => {e.preventDefault(); document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });}}>
+            <a
+              href="#footer"
+              id="about"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("footer")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#" className="btn-red" onClick={(e) => {e.preventDefault(); document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });}}>
+            <a
+              href="#"
+              className="btn-red"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("footer")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               Contact
             </a>
           </li>
@@ -112,11 +160,10 @@ const Navbar = () => {
             <span className="cart-length">{cartItems.length}</span>
           </p>
 
-          {/* User */}            
-            <Link to="/login" className="login-icon">
-              <FaRegUser />
-            </Link> 
-          
+          {/* User */}
+          <Link to="/login" className="login-icon">
+            <FaRegUser />
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -184,9 +231,9 @@ const Navbar = () => {
               </div>
 
               <div className="cart-actions">
-                <button className="checkout-btn">Checkout</button>
-                <Link to="/cart">
-                  <button className="viewcart-btn">View Cart</button>
+                <Link className="checkout-btn">Checkout</Link>
+                <Link to="/cart" className="viewcart-btn">
+                  View Cart
                 </Link>
               </div>
             </div>
@@ -194,7 +241,11 @@ const Navbar = () => {
           {/* {username&&(<p className="welcome-text">Hi {username} 👋</p>)} */}
         </>
       )}
-      {username&&(<p className="welcome-text">Hi <span className="fa-user">{username}</span> 👋 welcome to Mejestic</p>)}
+      {username && (
+        <p className="welcome-text">
+          Hi <span className="fa-user">{username}</span> 👋 welcome to Mejestic
+        </p>
+      )}
     </>
   );
 };

@@ -231,19 +231,26 @@ const Navbar = () => {
               </div>
 
               <div className="cart-actions">
-                <Link to='/checkout' className="checkout-btn">Checkout</Link>
+                <Link to="/checkout" className="checkout-btn">
+                  Checkout
+                </Link>
                 <Link to="/cart" className="viewcart-btn">
                   View Cart
                 </Link>
               </div>
             </div>
           </div>
-          {/* {username&&(<p className="welcome-text">Hi {username} 👋</p>)} */}
         </>
       )}
       {username && (
         <p className="welcome-text">
-          Hi <span className="fa-user">{username}</span> 👋 welcome to Mejestic
+          Hi <span className="fa-user">{username}</span>  welcome
+          <span>
+            <marquee behavior="smooth" direction="left">
+              Your one-stop destination for premium sports gear...Play harder,
+              train smarter with quality equipment you can trust...
+            </marquee>
+          </span>
         </p>
       )}
     </>

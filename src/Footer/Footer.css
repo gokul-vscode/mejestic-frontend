@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
 /* Footer Main */
 .footer {
   width: 100%;
@@ -52,7 +53,7 @@
   color: #cce5ff;
 }
 
-/* Links Column */
+/* Column headings */
 .footer-col h3 {
   font-size: 20px;
   margin-bottom: 15px;
@@ -60,27 +61,35 @@
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
 }
 
+/* Lists */
 .footer-col ul {
   list-style: none;
 }
 
+/* List items */
 .footer-col ul li {
   margin: 10px 0;
 }
 
-.footer-col ul li a {
-  text-decoration: none;
+/* ✅ BUTTON LINKS (replaces <a>) */
+.footer-col ul li button {
+  background: none;
+  border: none;
   color: #e3e3e3;
   font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
   transition: 0.3s;
+  text-align: left;
 }
 
-.footer-col ul li a:hover {
+.footer-col ul li button:hover {
   color: #ffffff;
   padding-left: 5px;
 }
 
-/* Contact Icons */
+/* Contact text */
 .footer-col p {
   display: flex;
   align-items: center;
@@ -103,12 +112,10 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   opacity: 0.9;
 }
-.footer a{
-  text-decoration: none;
-  color: white;
-}
 
-/* Responsive - Tablet */
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablet */
 @media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: repeat(3, 1fr);
@@ -120,7 +127,7 @@
   }
 }
 
-/* 🔵 Tablets (900px) */
+/* Tablets */
 @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
@@ -132,7 +139,7 @@
   }
 }
 
-/* 🔵 Mobile (600px) */
+/* Mobile */
 @media (max-width: 600px) {
   .footer {
     padding: 55px 6% 25px;
@@ -152,16 +159,16 @@
     justify-content: center;
   }
 
-  .footer-col ul li {
+  .footer-col ul li button {
     text-align: center;
   }
 
-  .footer-col ul li a:hover {
+  .footer-col ul li button:hover {
     padding-left: 0;
   }
 }
 
-/* 🔵 Small Mobile (450px) */
+/* Small Mobile */
 @media (max-width: 450px) {
   .footer-logo {
     font-size: 26px;
@@ -181,9 +188,8 @@
   }
 }
 
-/* 🔵 Extra Small Devices (350px and below) */
+/* Extra Small Devices */
 @media (max-width: 350px) {
-
   .footer {
     padding: 45px 5% 20px;
   }
@@ -202,7 +208,7 @@
   }
 
   .footer-col p,
-  .footer-col ul li a {
+  .footer-col ul li button {
     font-size: 14px;
   }
 }

@@ -615,12 +615,15 @@ body {
 .welcome-text{
   text-align: right;
   padding-right: 30px;
+  background: linear-gradient(135deg,  #0044cc,#1a73ff);
 }
 .fa-user{
   color: rgb(255, 0, 0);
   font-weight: bold;
   font-size: 22px;
-}@media (max-width: 480px) {
+  /* background-color: #1a73ff; */
+}
+@media (max-width: 480px) {
   .checkout-btn,
   .viewcart-btn {
     width: 48%;

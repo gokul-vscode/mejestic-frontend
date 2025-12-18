@@ -638,34 +638,27 @@ body {
   font-weight: 500;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Username */
 .fa-user {
   color: #ff2d2d;
   font-weight: 700;
   font-size: 18px;
 }
 
-/* Marquee container */
+/* Marquee replacement */
 .marquee {
   flex: 1;
   overflow: hidden;
   white-space: nowrap;
-  position: relative;
 }
 
-/* Moving text */
 .marquee-text {
   display: inline-block;
   padding-left: 100%;
   animation: marquee-scroll 14s linear infinite;
-  font-size: 14px;
-  opacity: 0.95;
 }
 
-/* Animation */
 @keyframes marquee-scroll {
   0% {
     transform: translateX(0%);

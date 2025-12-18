@@ -244,12 +244,16 @@ const Navbar = () => {
       )}
       {username && (
         <p className="welcome-text">
-          Hi <span className="fa-user">{username}</span>  welcome
-          <span>
-            <marquee behavior="smooth" direction="left">
-              Your one-stop destination for premium sports gear...Play harder,
+          Hi <span className="fa-user">{username}</span> 👋 welcome to Mejestic
+          <span
+            className="marquee"
+            role="region"
+            aria-label="Scrolling announcement"
+          >
+            <span className="marquee-text">
+              Your one-stop destination for premium sports gear... Play harder,
               train smarter with quality equipment you can trust...
-            </marquee>
+            </span>
           </span>
         </p>
       )}

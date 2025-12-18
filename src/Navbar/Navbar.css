@@ -47,18 +47,21 @@ body {
   transition: 0.4s;
 }
 
-.nav-links li a {
+/* BUTTON STYLE (instead of a) */
+.nav-links li button {
+  background: none;
+  border: none;
   color: #ffffff;
-  text-decoration: none;
   font-size: 17px;
   font-weight: 500;
+  cursor: pointer;
   position: relative;
+  padding: 0;
   transition: 0.3s ease;
-  /* text-align: center; */
 }
 
 /* Hover underline animation */
-.nav-links li a::after {
+.nav-links li button::after {
   content: '';
   position: absolute;
   width: 0%;
@@ -69,23 +72,34 @@ body {
   transition: 0.4s;
 }
 
-.nav-links li a:hover::after {
+.nav-links li button:hover::after {
   width: 100%;
 }
 
-.nav-links li a:hover {
-  color: #99ccff; /* lighter blue on hover */
+.nav-links li button:hover {
+  color: #99ccff;
 }
 
-/* CTA button */
-.btn-red {
+/* CTA button (Contact) */
+.nav-links li .btn-red {
   padding: 10px 22px;
   background: linear-gradient(135deg, #1a73ff, #0044cc);
   border-radius: 30px;
-  color: #ffffff !important;
+  color: #ffffff;
   transition: 0.3s;
   text-shadow: 0 0 6px rgba(26, 115, 255, 0.5);
 }
+
+/* CTA hover */
+.nav-links li .btn-red:hover {
+  opacity: 0.9;
+}
+
+/* Remove underline animation for CTA */
+.nav-links li .btn-red::after {
+  display: none;
+}
+
 
 .btn-red:hover {
   transform: translateY(-3px);
@@ -613,6 +627,8 @@ body {
 
 
 .welcome-text{
+  margin-top: 20px;
+  height: 25px;
   text-align: right;
   padding-right: 30px;
   background: linear-gradient(135deg,  #0044cc,#1a73ff);

@@ -59,8 +59,8 @@ const Navbar = () => {
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
-            <a
-              href="#banner"
+            <button
+              type="button"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -69,11 +69,11 @@ const Navbar = () => {
               }}
             >
               Home
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#products"
+            <button
+              type="button"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -82,11 +82,11 @@ const Navbar = () => {
               }}
             >
               Products
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#footer"
+            <button
+              type="button"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -95,11 +95,11 @@ const Navbar = () => {
               }}
             >
               Services
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#footer"
+            <button
+              type="button"
               id="about"
               onClick={(e) => {
                 e.preventDefault();
@@ -109,11 +109,11 @@ const Navbar = () => {
               }}
             >
               About
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#"
+            <button
+              type="button"
               className="btn-red"
               onClick={(e) => {
                 e.preventDefault();
@@ -123,7 +123,7 @@ const Navbar = () => {
               }}
             >
               Contact
-            </a>
+            </button>
           </li>
         </ul>
 
@@ -231,7 +231,7 @@ const Navbar = () => {
               </div>
 
               <div className="cart-actions">
-                <Link className="checkout-btn">Checkout</Link>
+                <Link to='/checkout' className="checkout-btn">Checkout</Link>
                 <Link to="/cart" className="viewcart-btn">
                   View Cart
                 </Link>

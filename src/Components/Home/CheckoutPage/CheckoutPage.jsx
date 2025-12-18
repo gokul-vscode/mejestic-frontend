@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaTrashAlt } from "react-icons/fa";
-import { incrementQty, decrementQty, removeFromCart,addToCart } from "../../../CartSlice/CartSlice";
+import {  removeFromCart } from "../../../CartSlice/CartSlice";
 import "./CheckoutPage.css";
 
 const CheckoutPage = () => {

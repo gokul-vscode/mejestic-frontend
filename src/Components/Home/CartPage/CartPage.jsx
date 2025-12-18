@@ -1,7 +1,7 @@
 import React from "react";
 import "./CartPage.css";
 import { useSelector, useDispatch } from "react-redux";
-import { incrementQty, decrementQty, removeFromCart,addToCart } from '../../../CartSlice/CartSlice';
+import { incrementQty, decrementQty, removeFromCart } from '../../../CartSlice/CartSlice';
 import { FaTrashAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const CartPage = () => {

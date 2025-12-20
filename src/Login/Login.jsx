@@ -33,9 +33,12 @@ const Login = () => {
       setPassword("");
       setIsLogin(true);
     } catch (err) {
-      alert(err.response?.data?.error || "Signup failed");
-    }
+  console.log(err.response);
+  alert(err.response?.data?.error || "Login failed");
+}
+
   }
+  
 };
 
 

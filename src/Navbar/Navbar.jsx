@@ -45,7 +45,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const storedUser = localStorage.getItem("username");
+    const storedUser = localStorage.setItem("username",username);
     if (storedUser) {
       setUsername(storedUser);
     }

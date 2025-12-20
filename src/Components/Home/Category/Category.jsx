@@ -12,12 +12,7 @@ const Category = () => {
 
   const dispatch = useDispatch();
 
-  // const filtered2 = products.filter((p) => p.category === activeTab);
-  //   const filtered2 = sportskit.filter(
-  //   (item) =>
-  //     item.category === activeTab &&
-  //     (item.type === "cat" || item.type === "premium")
-  // );
+  
 
   const [products, setProducts] = useState([]);
   useEffect(() => {
